@@ -1,0 +1,52 @@
+header {
+  background-color: $colorPrincipal;
+  position: fixed;
+  width: 100%;
+  height: 84px;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__titulo--h1 {
+  font-family: $fontPrincipal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 40, 11px;
+  text-transform: uppercase;
+  position: absolute;
+  width: 211px;
+  height: 60px;
+  left: 121px;
+  top: 22px;
+}
+.header__nav ul {
+  display: flex;
+  margin: 50px;
+  gap: 50px;
+}
+.header__nav--links a {
+  font-family: $fontPrincipal;
+  color: $colorFontPrincipal;
+  border-radius: 50px;
+  font-weight: 550;
+  font-size: 17px;
+  line-height: 28, 65px Copy;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: $fontPrincipal;
+  padding: 10px;
+  width: 150px;
+  height: 60px;
+}
+.header__nav--links:hover {
+  text-decoration: underline;
+  border-radius: 50px;
+}
+.active {
+  background-color: $colorBotones;
+  border-radius: 50px;
+}
