@@ -8,6 +8,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 .header__titulo--h1 {
   font-family: $fontPrincipal;

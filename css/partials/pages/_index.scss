@@ -3,6 +3,61 @@
   background-image: url("/assets/images/inicioySobreNosotros.jpg");
   background-size: cover;
   background-position-y: center;
-  width: 100%;
+  background-repeat: no-repeat;
+  width: 100vw;
   height: 100vh;
+  overflow: hidden;
+}
+#index:before {
+  content: "";
+  position: absolute;
+  height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.index__container {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  position: absolute;
+  bottom: 10%;
+  left: 10%;
+}
+.index__titulos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.index__container--h2 {
+  font-family: $fontPrincipal;
+  text-transform: uppercase;
+  color: $colorFontBotones;
+  font-size: 50px;
+  font-weight: normal;
+  line-height: 114, 6px;
+}
+.index__container--p {
+  font-family: $fontPrincipal;
+  font-weight: normal;
+  font-size: 22px;
+  line-height: 40px;
+  color: $colorFontBotones;
+}
+.index__container--button {
+  padding: 20px;
+  width: 250px;
+  border-radius: 50px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-family: $fontPrincipal;
+  font-size: 18px;
+  color: $colorFontBotones;
+  background-color: $colorBotones;
+}
+.index__container--button:hover {
+  background-color: #a7ad62;
 }
