@@ -1,4 +1,104 @@
 #galeria {
   width: 100%;
   height: 100vh;
+  position: relative;
+  overflow-y: hidden;
+}
+.galeria__container {
+  display: flex;
+  flex-wrap: wrap;
+  position: absolute;
+  bottom: 100px;
+}
+.galeryColumn {
+  flex: 70%;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.galeryColumn2 {
+  width: 100%;
+  flex: 30%;
+}
+.plantas2 {
+  object-fit: cover;
+}
+
+.plantas2__button {
+  display: flex;
+  gap: 5px;
+  align-content: center;
+  justify-content: center;
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 250px;
+  padding: 16px;
+  border-radius: 50px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font-family: $fontPrincipal;
+  font-size: 18px;
+  color: $colorFontBotones;
+  background-color: $colorBotones;
+}
+.galeryColumn2__button:hover {
+  background-color: #9c726f;
+}
+#varMacetas {
+  position: relative;
+}
+#ideales {
+  position: relative;
+}
+#decora {
+  position: relative;
+}
+#varPlantas {
+  position: relative;
+}
+#varPlantas2 {
+  position: relative;
+}
+.imgHover {
+  position: absolute;
+  top: 0;
+  background-color: $colorBanners;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.5s;
+}
+.imgHover h3 {
+  position: relative;
+  top: 50%;
+  text-align: center;
+  font-family: $fontPrincipal;
+  font-weight: 400;
+  font-size: 30px;
+  font-style: normal;
+  color: $colorPrincipal;
+  line-height: 40, 11px;
+}
+#varMacetas:hover .imgHover {
+  opacity: 1;
+  transition: 0.5s;
+}
+#ideales:hover .imgHover {
+  opacity: 1;
+  transition: 0.5s;
+}
+#decora:hover .imgHover {
+  opacity: 1;
+  transition: 0.5s;
+}
+#varPlantas:hover .imgHover {
+  opacity: 1;
+  transition: 0.5s;
+}
+#varPlantas2:hover .imgHover {
+  background: $colorBotones;
+  opacity: 0.7;
+  transition: 0.5s;
 }

@@ -1,0 +1,93 @@
+@media screen and (min-width: 1400px) {
+  //Galeria
+
+  #galeria {
+    margin-top: 20px;
+  }
+  .galeria__container {
+    bottom: 1px;
+    padding: 10px;
+  }
+  #varMacetas img {
+    width: 450px;
+    height: 450px;
+  }
+  #ideales img {
+    width: 650px;
+    height: 450px;
+  }
+  #decora img {
+    width: 650px;
+    height: 450px;
+  }
+  #varPlantas img {
+    width: 450px;
+    height: 450px;
+  }
+  .plantas2 {
+    width: 600px;
+    height: 950px;
+  }
+  .plantas2__button {
+    left: 30%;
+  }
+}
+@media screen and (min-width: 820px) and (max-width: 1090px) {
+  //Header
+  #galeria {
+    height: 1680px !important;
+  }
+  .header__nav {
+    display: none;
+  }
+  //Galeria
+  #galeria {
+    height: 100vh;
+  }
+  .galeria__container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .galeryColumn div img {
+    width: 350px;
+    height: 250px;
+    margin-left: 40px;
+  }
+  .plantas2 {
+    width: 350px;
+    height: 950px;
+    margin-left: 40px;
+  }
+  .plantas2__button {
+    left: 10%;
+  }
+}
+@media screen and (max-width: 820px) {
+  //Header
+  .header__nav {
+    display: none;
+  }
+  //Galeria
+  #galeria {
+    height: 2300px;
+  }
+  .galeria__container {
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+  }
+  .galeryColumn div img {
+    width: 350px;
+    height: 250px;
+    margin-left: 40px;
+  }
+  .plantas2 {
+    width: 350px;
+    height: 950px;
+    margin-left: 40px;
+  }
+  .plantas2__button {
+    left: 10%;
+  }
+}

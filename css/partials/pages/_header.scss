@@ -9,8 +9,10 @@ header {
   justify-content: space-between;
   align-items: center;
   z-index: 100;
+  overflow-y: hidden;
 }
 .header__titulo--h1 {
+  color: $colorFontPrincipal;
   font-family: $fontPrincipal;
   font-weight: 500;
   font-size: 30px;

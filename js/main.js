@@ -10,10 +10,10 @@ window.addEventListener('scroll', (e) =>{
       if(pageYOffset >= (sectionTop - sectionHeight / 3)){
         current = sect.getAttribute('id');
       }      
-  })
-
-  links.forEach(link => {
-    link.classList.remove('active');
+    })
+    
+    links.forEach(link => {
+      link.classList.remove('active');
       if(link.classList.contains(current)) {           
         link.classList.add('active');
       }
