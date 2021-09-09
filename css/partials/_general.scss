@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: $fontPrincipal;
 }
 html {
   scroll-behavior: smooth;
@@ -19,4 +20,15 @@ li {
 .container {
   display: flex;
   flex-direction: column;
+}
+
+.tituloSeccion{
+    font-size: 40px;
+    font-weight: 400;
+    &--blanco{
+        color: $colorFontBotones;
+    }
+    &--negro{
+        color: #212121;
+    }
 }

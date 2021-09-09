@@ -1,0 +1,47 @@
+footer{
+    width: 100%;
+    height: 50vh;
+    padding: 0 10%;
+    display: flex;
+    flex-flow: column nowrap;
+    background-color: $colorFooter;
+    .redes{
+        width: 100%;
+        height: 50%;
+        border:1px solid red;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        align-content: space-between;
+        h4{
+            color: white;
+            padding: 10px 0;
+            font-size: 25px;
+        }
+    }
+    .mapa{
+        width: 100%;
+        height: 50%;
+        border:1px solid green;
+        overflow: hidden;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    footer{
+        flex-flow: row nowrap;
+        padding: 20px;
+        .redes{
+            width: 50%;
+            height: 100%;
+            justify-content: space-between;
+        }
+        .mapa{
+            width: 50%;
+            height: 100%;
+            margin: 0;
+        }
+    }    
+}
