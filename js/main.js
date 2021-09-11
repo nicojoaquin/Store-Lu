@@ -21,13 +21,19 @@ window.addEventListener('scroll', (e) =>{
       }
     })
 })
+const toggle1 = document.querySelector('#bar1')
+const toggle2 = document.querySelector('#bar2')
+const toggle3 = document.querySelector('#bar3')
 
 navBar.addEventListener('click', () => {
   navMenu.classList.toggle('navNew');
-})
+  toggle1.classList.toggle('barTop')
+  toggle2.classList.toggle('barMid')
+  toggle3.classList.toggle('barBottom')
+  })
 
 links.forEach(link => {
   link.addEventListener('click', () => {
-    navMenu.classList.remove('navNew'); 
+    navMenu.classList.remove('navNew');
   }) 
 })

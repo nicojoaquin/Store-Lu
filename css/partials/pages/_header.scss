@@ -17,6 +17,25 @@ header {
   background: #212121;
   display: none;
   margin-top: 4px;
+  transition: 0.3s ease-in-out;
+}
+.nav-toggle {
+  cursor: pointer;
+}
+
+.barTop {
+  transform: rotate(-45deg) translate(3px, -2px);
+  position: absolute;
+  transition: 0.3s ease-in-out;
+}
+.barMid {
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+.barBottom {
+  transform: rotate(45deg) translate(-6px, -7px);
+  position: absolute;
+  transition: 0.3s ease-in-out;
 }
 .header__titulo--h1 {
   color: $colorFontPrincipal;
@@ -26,9 +45,8 @@ header {
   line-height: 40, 11px;
   text-transform: uppercase;
   position: absolute;
-  width: 211px;
   height: 60px;
-  left: 121px;
+  left: 50px;
   top: 22px;
 }
 .header__nav ul {
@@ -46,7 +64,6 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   padding: 10px;
   width: 150px;
   height: 60px;
