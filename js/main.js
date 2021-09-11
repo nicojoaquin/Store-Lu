@@ -35,5 +35,8 @@ navBar.addEventListener('click', () => {
 links.forEach(link => {
   link.addEventListener('click', () => {
     navMenu.classList.remove('navNew');
+    toggle1.classList.remove('barTop')
+    toggle2.classList.remove('barMid')
+    toggle3.classList.remove('barBottom')
   }) 
 })
