@@ -40,3 +40,16 @@ links.forEach(link => {
     toggle3.classList.remove('barBottom')
   }) 
 })
+
+
+//MODAL
+const modal = document.getElementsByClassName('modalGaleria')[0];
+
+document.getElementById('openModal').onclick = () =>{
+    modal.style.opacity = 100;
+    modal.style.zIndex = 100;
+}
+document.getElementById('closeModal').onclick = () =>{
+    modal.style.opacity = 0;
+    modal.style.zIndex = -1;
+}

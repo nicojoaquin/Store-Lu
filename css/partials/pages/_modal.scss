@@ -1,0 +1,67 @@
+.modalGaleria{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffffffa1;
+    
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.cerrarGaleria{
+    height: 20vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 20px;
+    button{
+        width: 60px;
+        height: 60px;
+        font-size: 50px;
+        background-color: unset;
+        border: none;
+        color: #858585;
+        &:hover{
+            color: black;
+        }
+    }
+    
+}
+
+.sliderGaleria{
+    width: 100%;
+    height: 79vh;
+    display: flex;
+    justify-content: center;
+    .glide__slides{
+        height: 100%;
+    }
+    .glide__slide{
+        display: flex;
+        justify-content: center;
+        
+        overflow: hidden;
+        img{
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+    .glide__arrow{
+        top: 60vh;
+        background-color: #986662E5;
+        ;
+        border: none;
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        font-size: 50px;
+        &--left{
+            left: 20px;
+        }
+        &--right{
+            right: 20px;
+        }
+    }
+}

@@ -8,7 +8,6 @@ footer{
     .redes{
         width: 100%;
         height: 50%;
-        border:1px solid red;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -23,7 +22,6 @@ footer{
     .mapa{
         width: 100%;
         height: 50%;
-        border:1px solid green;
         overflow: hidden;
         margin-bottom: 10px;
     }
@@ -37,11 +35,13 @@ footer{
             width: 50%;
             height: 100%;
             justify-content: space-between;
+            padding: 30px 50px;
         }
         .mapa{
             width: 50%;
             height: 100%;
             margin: 0;
+            padding: 10px;
         }
     }    
 }
