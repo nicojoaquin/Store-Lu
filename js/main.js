@@ -5,6 +5,7 @@ const section = document.querySelectorAll('.section')
 const navBar = document.querySelector('#bar')
 const navMenu = document.querySelector('#navMenu')
 
+//Cambio de color al hacer scroll.
 window.addEventListener('scroll', (e) =>{
   section.forEach (sect => {
     const sectionTop = sect.offsetTop;
@@ -21,6 +22,8 @@ window.addEventListener('scroll', (e) =>{
       }
     })
 })
+
+//Menu de navegación.
 const toggle1 = document.querySelector('#bar1')
 const toggle2 = document.querySelector('#bar2')
 const toggle3 = document.querySelector('#bar3')
