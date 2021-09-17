@@ -1,180 +1,180 @@
-#galeria{
-    width: 100%;
+#galeria {
+  width: 100%;
 }
 
-.contGaleria{
-    width: 100%;
-    padding: 30px 5%;
-    display: grid;
-    justify-content: center;
-    grid-template-areas: 
-        "macetas" 
-        "regalar"
-        "plantas"
-        "espacios"
-        "productos";
-    grid-template-columns: 80%;
-    grid-template-rows: 80vw 50vw 80vw 50vw 500px;
-    grid-row-gap: 20px;
+.contGaleria {
+  width: 100%;
+  padding: 30px 5%;
+  display: grid;
+  justify-content: center;
+  grid-template-areas:
+    "macetas"
+    "regalar"
+    "plantas"
+    "espacios"
+    "productos";
+  grid-template-columns: 80%;
+  grid-template-rows: 80vw 50vw 80vw 50vw 500px;
+  grid-row-gap: 20px;
 }
 
 $imgNames: (macetas, regalar, espacios, plantas, productos);
-@each $name in $imgNames{
-    .#{$name}{
-        grid-area: $name;
-        background-image: url("../../../assets/images/"+$name+".jpg");
-        width: 100%;
-    }
+@each $name in $imgNames {
+  .#{$name} {
+    grid-area: $name;
+    background-image: url("../../../assets/images/" + $name + ".jpg");
+    width: 100%;
+  }
 }
 
-.itemGaleria{
-    display: flex;
-    background-size: cover;
-    background-position: center center;
-    overflow: hidden;
+.itemGaleria {
+  display: flex;
+  background-size: cover;
+  background-position: center center;
+  overflow: hidden;
+  width: 100%;
+  .itemCaption {
     width: 100%;
-    .itemCaption{
-        width: 100%;
-        color:white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    &--producto {
+      width: 100%;
+      height: 100%;
+      background-color: #986662cc;
+      align-items: center;
+      .botonGaleria {
+        padding: 10px 0;
+        width: 250px;
+        border-radius: 50px;
+        outline: none;
+        border: 0;
+        cursor: pointer;
+        font-family: $fontPrincipal;
+        font-size: 18px;
+        color: $colorFontBotones;
+        background-color: $colorBotones;
         display: flex;
         justify-content: center;
-        align-items: flex-end;
-        
-        &--producto{
-            width: 100%;
-            height: 100%;
-            background-color: #986662CC;
-            align-items: center;
-            .botonGaleria {
-                padding: 10px 0;
-                width: 250px;
-                border-radius: 50px;
-                outline: none;
-                border: 0;
-                cursor: pointer;
-                font-family: $fontPrincipal;
-                font-size: 18px;
-                color: $colorFontBotones;
-                background-color: $colorBotones;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                overflow: hidden;
-                filter: brightness(90%);
-                cursor: pointer;
-                .contFlecha {
-                    background-color: #E8E5E566;
-                    border-radius: 50%;
-                    width: 40px;
-                    height: 40px;
-                    overflow: hidden;
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    margin-left: 15px;
-                    .flechaBoton{
-                        font-size: 24px;
-                    }
-                }
-                &:hover{
-                    filter: brightness(100%);
-                }
-            }
-        }
-        .iconAngulo{
-            display: none;
-        }
-        h4{
-            width: 100%;
-            background-color: rgba(112, 112, 112, 0.7);   
-            height: 50px;
-            font-size: 24px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-    }
-}
-
-@media screen and (min-width: 576px){
-    .contGaleria{
-        height: 100vh;
-        grid-template-areas: 
-            "macetas productos"
-            "regalar productos"
-            "plantas productos"
-            "espacios productos";
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: 30vh 50vw;
-        grid-column-gap: 30px;
-        grid-row-gap: 10px;
+        align-items: center;
         overflow: hidden;
-    }
-}
-
-@media screen and (min-width: 768px){
-    .contGaleria{
-        grid-template-areas: 
-            "macetas  regalar productos"
-            "espacios  plantas productos";
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1.2fr;
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
-}
-
-@media screen and (min-width: 992px){
-    .contGaleria{
-        grid-template-areas: 
-            "macetas macetas regalar regalar regalar productos productos"
-            "espacios espacios espacios plantas plantas productos productos";
-        grid-template-columns: repeat(5, 1fr) 150px 150px;
-        grid-column-gap: 40px;
-        grid-row-gap: 40px;
-    }
-    
-    .itemGaleria{
-        .itemCaption{
-            padding: 10px 20px;
-            justify-content: space-between;
-            align-items: unset;
-            flex-direction: column;
-            background-color: rgba(0, 0, 0, 0.5);
-            transition: 0.5s;
-            opacity: 0;
-            &:hover{
-                opacity: 1;
-            }
-            &--producto{
-                background-color: unset;
-                opacity: 1;
-                justify-content: center;
-                align-items: center;
-            }
-            &--producto:hover{
-                background-color: #986662CC;
-            }
-            .iconAngulo{
-                display: flex;
-                overflow: hidden;
-                &:first-child{
-                    justify-content: flex-end;
-                }
-                &:last-child{
-                    align-items: flex-end;
-                }
-                .arrow{
-                    transform: rotate(45deg);
-                    font-size: 40px;
-                }
-            }
-            h4{
-                text-align: center;
-                height: 100px;
-                line-height: 40.11px;
-                background-color: unset;
-            }
+        filter: brightness(90%);
+        cursor: pointer;
+        .contFlecha {
+          background-color: #e8e5e566;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          overflow: hidden;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-left: 15px;
+          .flechaBoton {
+            font-size: 24px;
+          }
         }
+        &:hover {
+          filter: brightness(100%);
+        }
+      }
     }
+    .iconAngulo {
+      display: none;
+    }
+    h4 {
+      width: 100%;
+      background-color: rgba(112, 112, 112, 0.7);
+      height: 50px;
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+@media screen and (min-width: 576px) {
+  .contGaleria {
+    height: 100vh;
+    grid-template-areas:
+      "macetas productos"
+      "regalar productos"
+      "plantas productos"
+      "espacios productos";
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 30vh 50vw;
+    grid-column-gap: 30px;
+    grid-row-gap: 10px;
+    overflow: hidden;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .contGaleria {
+    grid-template-areas:
+      "macetas  regalar productos"
+      "espacios  plantas productos";
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1.2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .contGaleria {
+    grid-template-areas:
+      "macetas macetas regalar regalar regalar productos productos"
+      "espacios espacios espacios plantas plantas productos productos";
+    grid-template-columns: repeat(5, 1fr) 150px 150px;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+  }
+
+  .itemGaleria {
+    .itemCaption {
+      padding: 10px 20px;
+      justify-content: space-between;
+      align-items: unset;
+      flex-direction: column;
+      background-color: rgba(0, 0, 0, 0.5);
+      transition: 0.5s;
+      opacity: 0;
+      &:hover {
+        opacity: 1;
+      }
+      &--producto {
+        background-color: unset;
+        opacity: 1;
+        justify-content: center;
+        align-items: center;
+      }
+      &--producto:hover {
+        background-color: #986662cc;
+      }
+      .iconAngulo {
+        display: flex;
+        overflow: hidden;
+        &:first-child {
+          justify-content: flex-end;
+        }
+        &:last-child {
+          align-items: flex-end;
+        }
+        .arrow {
+          transform: rotate(45deg);
+          font-size: 40px;
+        }
+      }
+      h4 {
+        text-align: center;
+        height: 100px;
+        line-height: 40.11px;
+        background-color: unset;
+      }
+    }
+  }
 }

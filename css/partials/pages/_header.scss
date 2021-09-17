@@ -78,8 +78,11 @@ header {
 }
 .redes-nav {
   position: absolute;
-  bottom: 100px;
+  bottom: 150px;
   display: flex;
   margin: 20px;
-  gap: 10px;
+  gap: 15px;
+}
+.redes-nav a {
+  color: black;
 }
