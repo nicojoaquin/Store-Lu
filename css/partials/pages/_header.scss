@@ -76,6 +76,9 @@ header {
   background-color: $colorBotones;
   border-radius: 50px;
 }
+.active a {
+  color: #fff;
+}
 .redes-nav {
   position: absolute;
   bottom: 150px;
