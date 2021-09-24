@@ -65,3 +65,40 @@
         }
     }
 }
+
+@media screen and (max-width: 576px) {
+    .sliderGaleria{
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        .glide__slides{
+            height: 100%;
+        }
+        .glide__slide{
+            display: flex;
+            justify-content: center;
+            
+            overflow: hidden;
+            img{
+                height: 90%;
+                overflow: hidden;
+            }
+        }
+        .glide__arrow{
+            top: 50vh;
+            background-color: #986662E5;
+            border: none;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            font-size: 20px;
+            &--left{
+                left: 20px;
+            }
+            &--right{
+                right: 20px;
+            }
+        }
+    }
+}
