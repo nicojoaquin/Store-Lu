@@ -14,9 +14,12 @@ footer {
     align-items: flex-start;
     align-content: space-between;
     h4 {
-      color: white;
+      color: #e8e5e5;
       padding: 10px 0;
       font-size: 25px;
+      span {
+        margin-left: 20px;
+      }
     }
   }
   .mapa {
@@ -32,7 +35,7 @@ footer {
 .redes .fa-instagram,
 .redes .fa-facebook-square,
 .redes .fa-whatsapp {
-  color: rgb(211, 181, 105);
+  color: #e8e5e5;
 }
 @media screen and (min-width: 576px) {
   footer {

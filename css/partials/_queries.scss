@@ -22,10 +22,14 @@
   .active {
     background: none;
   }
+  .active a {
+    color: $colorFontPrincipal;
+  }
   .header__nav ul {
     flex-direction: column;
     color: white;
     position: absolute;
+    gap: 20px;
   }
   .header__nav--links a {
     justify-content: flex-start;
@@ -35,6 +39,9 @@
   }
   .header__bars {
     display: block;
+  }
+  .index__container {
+    padding: 20px;
   }
 }
 @media screen and (max-width: 770px) {

@@ -27,15 +27,14 @@ $imgNames: (macetas, regalar, espacios, plantas, productos);
   }
 }
 
-
 .itemGaleria {
   display: flex;
   background-size: cover;
   background-position: center bottom;
   overflow: hidden;
   width: 100%;
-  &.regalar{
-      background-position: center center;
+  &.regalar {
+    background-position: center center;
   }
   .itemCaption {
     width: 100%;
