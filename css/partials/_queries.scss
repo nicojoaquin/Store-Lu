@@ -15,9 +15,13 @@
     z-index: 100;
     background-color: #fff;
     transition: 0.5s;
+    overflow: hidden;
   }
   .navNew {
     top: 80px;
+  }
+  .navNew .redes-nav {
+    display: flex;
   }
   .active {
     background: none;

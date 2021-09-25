@@ -50,6 +50,7 @@ header {
   top: 22px;
 }
 .header__nav ul {
+  position: relative;
   display: flex;
   margin: 50px;
   gap: 50px;
@@ -81,10 +82,11 @@ header {
 }
 .redes-nav {
   position: absolute;
-  bottom: 150px;
+  bottom: 15%;
   display: flex;
   margin: 20px;
   gap: 15px;
+  display: none;
 }
 .redes-nav a {
   color: black;

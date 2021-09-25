@@ -19,6 +19,7 @@
   align-items: center;
   flex-flow: column nowrap;
   padding: 10%;
+  overflow: hidden;
   p {
     margin: 35px 0;
     color: #e8e5e5;
@@ -26,6 +27,10 @@
     line-height: 20px;
     font-weight: 200;
     text-align: center;
+    overflow: hidden;
+  }
+  h2 {
+    overflow: hidden;
   }
 }
 
