@@ -26,6 +26,7 @@ li {
 .tituloSeccion {
   font-size: 40px;
   font-weight: 400;
+  overflow: hidden;
   &--blanco {
     color: $colorFontBotones;
   }
