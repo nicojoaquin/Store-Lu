@@ -13,12 +13,15 @@ footer {
     justify-content: center;
     align-items: flex-start;
     align-content: space-between;
+    overflow-y: hidden;
     h4 {
       color: #e8e5e5;
       padding: 10px 0;
       font-size: 25px;
+      overflow-y: hidden;
       span {
         margin-left: 20px;
+        overflow-y: hidden;
       }
     }
   }
